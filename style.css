@@ -1,1 +1,27 @@
 /* Add your CSS here */
+/* Hero Section Banner Styles */
+header {
+	/* Blue gradient background for Intel theme */
+	background: linear-gradient(90deg, #0f3ba7 0%, #1976d2 100%);
+	color: white; /* Make text readable on blue */
+	padding: 40px 0;
+	text-align: center;
+}
+
+header img {
+	/* Resize the logo to fit nicely in the banner */
+	width: 120px;
+	height: auto;
+	margin-bottom: 16px;
+}
+
+header h1 {
+	font-size: 2.5em;
+	margin: 0.5em 0 0.2em 0;
+}
+
+header p {
+	font-size: 1.2em;
+	max-width: 600px;
+	margin: 0 auto;
+}
