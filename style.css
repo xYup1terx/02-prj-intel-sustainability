@@ -52,6 +52,11 @@ section p {
 	font-size: 1em;
 	margin-top: 0.5em;
 	text-align: center;
+  display: none; /* Hide text by default */
+}
+
+section > div:hover > p {
+	display: block; /* Show text on hover */
 }
 
 /* Image slot for each card */
