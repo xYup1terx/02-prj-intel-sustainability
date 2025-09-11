@@ -1,27 +1,98 @@
-/* Add your CSS here */
-/* Hero Section Banner Styles */
-header {
-	/* Blue gradient background for Intel theme */
-	background: linear-gradient(90deg, #0f3ba7 0%, #1976d2 100%);
-	color: white; /* Make text readable on blue */
+/* Timeline Section Styles */
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px;
 	padding: 40px 0;
+}
+
+section > div {
+	background: #f4f8fb;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(15, 59, 167, 0.08);
+	width: 280px;
+	min-height: 340px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px 16px;
+	position: relative;
+	transition: transform 0.2s;
+}
+
+section > div:hover {
+	transform: translateY(-6px) scale(1.03);
+	box-shadow: 0 6px 16px rgba(15, 59, 167, 0.15);
+}
+
+section h2 {
+	color: #1976d2;
+	font-size: 1.3em;
+	margin-bottom: 0.2em;
+}
+
+section h3 {
+	color: #0f3ba7;
+	font-size: 1.1em;
+	margin-bottom: 0.5em;
+}
+
+section p {
+	color: #222;
+	font-size: 1em;
+	margin-top: 0.5em;
 	text-align: center;
 }
 
+/* Image slot for each card */
+section .timeline-img {
+	width: 80px;
+	height: 80px;
+	background: #e3eaf6;
+	border-radius: 8px;
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+/* Add your CSS here */
+/* Hero Section Banner Styles */
+header {
+		/* Blue gradient background for Intel theme */
+		background: linear-gradient(90deg, #0f3ba7 0%, #1976d2 100%);
+		color: white; /* Make text readable on blue */
+		padding: 40px 0;
+		text-align: center;
+		font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif; /* Change font for hero info */
+}
+
 header img {
-	/* Resize the logo to fit nicely in the banner */
-	width: 120px;
+	/* Make the logo larger for the hero section */
+	width: 180px;
 	height: auto;
 	margin-bottom: 16px;
+	transition: transform 0.3s ease;
+}
+
+header img:hover {
+	transform: scale(1.05);
 }
 
 header h1 {
-	font-size: 2.5em;
-	margin: 0.5em 0 0.2em 0;
+		font-size: 2.5em;
+		margin: 0.5em 0 0.2em 0;
+		font-family: inherit; /* Use the header font family */
+		transform: scale(1.02);
 }
 
+header h1:hover {
+  transform: scale(1.05);
 header p {
-	font-size: 1.2em;
-	max-width: 600px;
-	margin: 0 auto;
+		font-size: 1.2em;
+		max-width: 600px;
+		margin: 0 auto;
+		font-family: inherit; /* Use the header font family */
+    
 }
