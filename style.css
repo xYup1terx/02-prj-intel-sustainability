@@ -1,3 +1,26 @@
+/* Style for hero section description text */
+.hero-desc {
+	font-size: 1.3em;
+	color: #e3eaf6;
+	max-width: 800px;
+	margin: 0 auto;
+	font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
+	text-shadow: 0 1px 4px rgba(15, 59, 167, 0.12);
+	letter-spacing: 0.02em;
+	line-height: 1.5;
+}
+@keyframes hero-pulse-color {
+	0% { color: #fff; }
+	30% { color: #2b92f9; }
+	50% { color: #fff; }
+	100% { color: #fff; }
+}
+@keyframes hero-pulse {
+	0% { transform: scale(1); }
+	30% { transform: scale(1.13); }
+	50% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
 /* Jump animation for timeline info */
 /* Removed pulse animation */
 
@@ -90,8 +113,9 @@ section > div:hover {
 
 section h2 {
 	color: #1976d2;
-	font-size: 1.3em;
+	font-size: 1.9em;
 	margin-bottom: 0.2em;
+  text-decoration: underline;
 }
 
 section h3 {
@@ -161,6 +185,8 @@ header img {
 	height: auto;
 	margin-bottom: 16px;
 	transition: transform 0.3s ease;
+		animation: hero-pulse 0.7s ease 0.3s;
+}
 }
 
 header img:hover {
@@ -168,10 +194,11 @@ header img:hover {
 }
 
 header h1 {
-		font-size: 3.5em;
-		margin: 0.5em 0 0.2em 0;
-		font-family: inherit; /* Use the header font family */
-		transform: scale(1.02);
+				font-size: 3.7em;
+				margin: 0.5em 0 0.2em 0;
+				font-family: inherit; /* Use the header font family */
+				color: #fff;
+					animation: hero-pulse 0.7s ease 0.5s;
 }
 
 header h1:hover {
