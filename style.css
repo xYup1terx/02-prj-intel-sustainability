@@ -1,37 +1,42 @@
+html, body {
+	overflow-x: hidden;
+	max-width: 100vw;
+}
 .timeline-wrapper {
 	display: block;
-	width: calc(5 * 280px + 4 * 24px); /* Show 5 cards at a time, with gaps */
-	max-width: 100vw;
+	width: 100%;
+	max-width: 100%;
 	margin: 0 auto;
 	overflow-x: auto;
 	white-space: nowrap;
-}
-/* Timeline Wrapper Styles */
-.timeline-wrapper {
-		width: auto;
-	max-width: 100vw;
+
+	font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	margin: 0 auto;
 	overflow-x: auto;
-}
-/* Set default font for all text on the page */
-body {
-		font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
-		display: flex;
-		flex-direction: column;
+  
+	display: block;
+	width: 100%;
+	max-width: 100vw;
+	margin: 0 auto;
+	overflow-x: auto; /* Only timeline cards scroll horizontally */
+	white-space: nowrap;
 		min-height: 100vh;
 }
 /* Timeline Section Styles */
 section {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-		gap: 24px;
-		padding: 40px 0;
-		overflow-x: auto; /* Enable horizontal scrolling */
-			width: auto;
-		max-width: 100vw;
-		scrollbar-width: thin; /* For Firefox */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	gap: 24px;
+	padding: 40px 0;
+	overflow-x: auto; /* Enable horizontal scrolling for cards only */
+	width: 100%;
+	max-width: 100vw;
+	scrollbar-width: thin; /* For Firefox */
 }
 
 section > div {
@@ -48,6 +53,24 @@ section > div {
 	padding: 24px 16px;
 	position: relative;
 	 transition: transform 0.2s, border-color 0.2s;
+}
+
+/* Add a blue translucent square behind each timeline card */
+section > div::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 90%;
+  height: 90%;
+  background: rgba(25, 118, 210, 0.18); /* Intel blue, translucent */
+  border-radius: 16px;
+  z-index: 0;
+}
+
+section > div > * {
+  position: relative;
+  z-index: 1;
 }
 
 section > div:hover {
