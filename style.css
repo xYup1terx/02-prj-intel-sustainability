@@ -38,6 +38,7 @@ section > div {
 	padding: 24px 16px;
 	position: relative;
 	 transition: transform 0.2s, border-color 0.2s;
+  font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif; /* Match hero header font */
 }
 
 /* Add a blue translucent square behind each timeline card */
@@ -81,13 +82,30 @@ section p {
 		font-size: 1em;
 		margin-top: 0.5em;
 		text-align: center;
-		display: none; /* Hide text by default */
-		white-space: normal; /* Allow text to wrap */
-		word-break: break-word; /* Prevent overflow */
+			margin: 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(255,255,255,0.95);
+			border-radius: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.2s;
+			padding: 16px;
+			box-sizing: border-box;
+			white-space: normal; /* Allow text to wrap */
+			word-break: break-word; /* Prevent overflow */
+			z-index: 2;
 }
 
 section > div:hover > p {
-	display: block; /* Show text on hover */
+		opacity: 1;
+		pointer-events: auto;
 }
 
 /* Image slot for each card */
