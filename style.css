@@ -5,25 +5,10 @@ html, body {
 .timeline-wrapper {
 	display: block;
 	width: 100%;
-	max-width: 100%;
-	margin: 0 auto;
-	overflow-x: auto;
-	white-space: nowrap;
-
-	font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	margin: 0 auto;
-	overflow-x: auto;
-  
-	display: block;
-	width: 100%;
 	max-width: 100vw;
 	margin: 0 auto;
 	overflow-x: auto; /* Only timeline cards scroll horizontally */
 	white-space: nowrap;
-		min-height: 100vh;
 }
 /* Timeline Section Styles */
 section {
