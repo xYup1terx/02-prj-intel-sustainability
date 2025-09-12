@@ -1,21 +1,41 @@
+.timeline-wrapper {
+	display: block;
+	width: calc(5 * 280px + 4 * 24px); /* Show 5 cards at a time, with gaps */
+	max-width: 100vw;
+	margin: 0 auto;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+/* Timeline Wrapper Styles */
+.timeline-wrapper {
+		width: auto;
+	max-width: 100vw;
+	margin: 0 auto;
+	overflow-x: auto;
+}
 /* Set default font for all text on the page */
 body {
-	font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
+		font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
 }
 /* Timeline Section Styles */
 section {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	gap: 24px;
-	padding: 40px 0;
-	overflow-x: auto; /* Enable horizontal scrolling */
-	max-width: 100vw; /* Prevent section from exceeding viewport width */
-	scrollbar-width: thin; /* For Firefox */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		gap: 24px;
+		padding: 40px 0;
+		overflow-x: auto; /* Enable horizontal scrolling */
+			width: auto;
+		max-width: 100vw;
+		scrollbar-width: thin; /* For Firefox */
 }
 
 section > div {
+	flex-shrink: 0; /* Prevent cards from shrinking */
 	background: #f4f8fb;
 	border-radius: 12px;
 	box-shadow: 0 2px 8px rgba(15, 59, 167, 0.08);
@@ -43,17 +63,19 @@ section h2 {
 }
 
 section h3 {
-	color: #0f3ba7;
-	font-size: 1.1em;
-	margin-bottom: 0.5em;
+		color: #0f3ba7;
+		font-size: 1.5em;
+		margin-bottom: 0.5em;
 }
 
 section p {
-	color: #222;
-	font-size: 1em;
-	margin-top: 0.5em;
-	text-align: center;
-  display: none; /* Hide text by default */
+		color: #222;
+		font-size: 1em;
+		margin-top: 0.5em;
+		text-align: center;
+		display: none; /* Hide text by default */
+		white-space: normal; /* Allow text to wrap */
+		word-break: break-word; /* Prevent overflow */
 }
 
 section > div:hover > p {
@@ -62,8 +84,8 @@ section > div:hover > p {
 
 /* Image slot for each card */
 section .timeline-img {
-	width: 80px;
-	height: 80px;
+		width: 140px;
+		height: 140px;
 	background: #e3eaf6;
 	border-radius: 8px;
 	margin-bottom: 12px;
