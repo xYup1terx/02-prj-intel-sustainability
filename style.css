@@ -1,3 +1,17 @@
+/* Jump animation for timeline info */
+/* Removed pulse animation */
+
+.timeline-info {
+	display: block;
+	text-align: center;
+	font-size: 1.1em;
+	margin: 16px auto 0 auto;
+	/* Removed pulse animation */
+}
+
+.timeline-info:hover {
+	/* Removed pulse animation */
+}
 html, body {
 	overflow-x: hidden;
 	max-width: 100vw;
@@ -9,6 +23,15 @@ html, body {
 	margin: 0 auto;
 	overflow-x: auto; /* Only timeline cards scroll horizontally */
 	white-space: nowrap;
+}
+.timeline-info {
+  font-size: 1.0em;
+  color: #1976d2;
+  text-align: center;
+  padding: 12px 0;
+  font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif; /* Match hero header font */
+  
+
 }
 /* Timeline Section Styles */
 section {
