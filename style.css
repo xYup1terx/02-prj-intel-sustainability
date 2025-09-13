@@ -1,9 +1,23 @@
+section > div:first-child {
+	margin-left: 24px;
+}
+section > div:last-child {
+	margin-right: 24px;
+}
 /* Responsive: Shrink hero header text for very small screens */
-@media (max-width: 420px) {
-	header h1 {
-		font-size: 1.7em !important;
-		word-break: normal;
-		white-space: normal;
+@media (max-width: 900px) {
+	section {
+		flex-direction: column;
+		gap: 0;
+	}
+	section > div {
+		margin: 12px 0;
+	}
+	section > div:first-child {
+		margin: 0;
+	}
+	section > div:last-child {
+		margin: 0;
 	}
 }
 @media (max-width: 600px) {
@@ -11,7 +25,7 @@
 		padding: 24px 8px;
 	}
 	header h1 {
-		font-size: 1.5em;
+		font-size: 1.7em;
 		word-break: normal;
 		white-space: normal;
 	}
