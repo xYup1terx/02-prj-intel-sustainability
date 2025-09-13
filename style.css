@@ -208,7 +208,7 @@ header img {
 	/* Make the logo larger for the hero section */
 	width: 180px;
 	height: auto;
-	margin-bottom: 16px;
+		margin-bottom: 2px;
 	transition: transform 0.3s ease;
 		animation: hero-pulse 0.7s ease 0.3s;
 }
