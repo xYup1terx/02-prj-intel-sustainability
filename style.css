@@ -150,10 +150,11 @@ section h3 {
 }
 
 section p {
-		color: #222;
-		font-size: 1em;
-		margin-top: 0.5em;
-		text-align: center;
+				color: #0f3ba7;
+			font-size: 1em;
+			font-weight: bold;
+			margin-top: 0.5em;
+			text-align: center;
 			margin: 0;
 			position: absolute;
 			left: 0;
