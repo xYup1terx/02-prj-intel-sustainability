@@ -1,3 +1,29 @@
+/* Responsive: Shrink hero header text for very small screens */
+@media (max-width: 420px) {
+	header h1 {
+		font-size: 1.7em !important;
+		word-break: normal;
+		white-space: normal;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		padding: 24px 8px;
+	}
+	header h1 {
+		font-size: 1.5em;
+		word-break: normal;
+		white-space: normal;
+	}
+	.hero-desc {
+		font-size: 1em;
+		max-width: 95vw;
+		padding: 0 4vw;
+		word-break: normal;
+		white-space: normal;
+	}
+}
 section > div:first-child {
 	margin-left: 24px;
 }
